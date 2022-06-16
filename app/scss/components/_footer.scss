@@ -1,0 +1,43 @@
+.footer {
+  background-color: $firm;
+  color: $light;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 20px;
+}
+
+.footer-bottom {
+  margin-bottom: 50px;
+}
+
+.social {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+
+    &:hover {
+      path {
+        fill: $grey;
+        transition: fill 0.3s;
+      }
+    }
+
+    &:focus {
+      path {
+        fill: $accent;
+        transition: fill 0.3s;
+      }
+    }
+  }
+}

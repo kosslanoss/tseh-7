@@ -1,0 +1,53 @@
+.header {
+  background-color: $firm;
+  padding: 20px 0 15px;
+  color: $light;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    padding: 5px;
+    display: block;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $grey;
+    }
+    
+    &:focus {
+      transition: border 0.9s;
+      border-bottom: 1px solid $light;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.phone {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $grey;
+  }
+
+  &:focus {
+    transition: border 0.9s;
+    border-bottom: 1px solid $light;
+  }
+}
