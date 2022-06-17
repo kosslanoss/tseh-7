@@ -2,6 +2,10 @@
   background-color: $firm;
   padding: 20px 0 15px;
   color: $light;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 5;
   
   &__wrapper {
     display: flex;

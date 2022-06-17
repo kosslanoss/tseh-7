@@ -5,21 +5,20 @@ $(function(){
     $('.menu__btn').toggleClass('menu__btn--active');
   });
 
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+  $('.menu a').on('click', function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
 
-    // If we need pagination
+
+  const swiper = new Swiper('.swiper', {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
     },
   });
 
