@@ -14,6 +14,13 @@ $(function(){
     }, 1500);
   });
 
+  // $('.hero-slider').slick({
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 1
+  // });
+
 
   const swiper = new Swiper('.swiper', {
     pagination: {

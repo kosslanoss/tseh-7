@@ -25,12 +25,21 @@ body {
 }
 
 .section {
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
-// .title {
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+}
 
-// }
+.subtitle {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.4;
+  color: rgba(240, 133, 35, 0.35);
+}
 
 .button {
   display: flex;

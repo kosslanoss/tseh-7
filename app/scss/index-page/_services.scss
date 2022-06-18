@@ -1,0 +1,81 @@
+.services {
+  padding-bottom: 100px;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__blocks {
+    width: 60%;
+  }
+  
+  &__items {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__item {
+    padding: 80px 20px 20px;
+    border: 1px solid $dark;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.4;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: 0px 4px 10px 0px $dark;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      top: 18px;
+      right: calc(50% - 24px);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--smart::before {
+      background-image: url(../images/icons/smartphone.svg);
+    }
+
+    &--money::before {
+      background-image: url(../images/icons/money.svg);
+    }
+
+    &--geo::before {
+      background-image: url(../images/icons/geo.svg);
+    }
+  }
+
+  &__links {
+    padding-top: 90px;
+  }
+  
+  &__link {
+    font-size: 16px;
+    margin: 0 20px;
+    padding: 3px;
+    border: 1px solid transparent;
+    transition: opacity 0.3s;
+    
+    &:hover {
+      opacity: 50%;
+    }
+
+    &:focus {
+      transition: border 0.3s;
+      border-bottom: 1px solid $dark;
+    }
+  }
+}
