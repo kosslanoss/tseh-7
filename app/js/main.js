@@ -14,14 +14,6 @@ $(function(){
     }, 1500);
   });
 
-  // $('.hero-slider').slick({
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 300,
-  //   slidesToShow: 1
-  // });
-
-
   const swiper = new Swiper('.swiper', {
     pagination: {
       el: '.swiper-pagination',
@@ -29,5 +21,19 @@ $(function(){
       clickable: true
     },
   });
+
+  // $('.specialists__slider').slick({
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 1
+  // });
+
+  // $('.feedback__list').slick({
+  //   dots: true,
+  //   slidesToShow: 3
+  // });
+
+
 
 });
