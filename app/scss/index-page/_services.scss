@@ -3,6 +3,7 @@
   
   &__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -77,5 +78,32 @@
       transition: border 0.3s;
       border-bottom: 1px solid $dark;
     }
+  }
+}
+
+@media (max-width: 1170px) {
+  .services {
+    &__wrapper {
+      justify-content: center;
+    }
+  }  
+}
+
+@media (max-width: 992px) {
+  .services {
+    margin-bottom: 30px;
+
+    &__blocks {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    &__links {
+      padding-top: 40px;
+    }  
   }
 }

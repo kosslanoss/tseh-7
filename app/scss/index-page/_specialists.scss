@@ -3,6 +3,15 @@
     display: flex;
   }
 
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    transform: rotate(90deg);
+    bottom: 200px;
+    left: -245px;
+  }
+
   &__info {
     max-width: 220px;
   }
