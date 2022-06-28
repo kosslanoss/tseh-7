@@ -33,18 +33,24 @@ $(function(){
 
   var swiper = new Swiper(".feedback__wrapper", {
     slidesPerView: 4,
-    spaceBetween: 10,
+    spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
+      type: 'bullets',
       clickable: true,
     },
     breakpoints: {
+      280: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
       576: {
         slidesPerView: 2,
+        spaceBetween: 10,
       },
       992: {
         slidesPerView: 3,
-        spaceBetween: 10,
+        spaceBetween: 20,
       },
     },
   });

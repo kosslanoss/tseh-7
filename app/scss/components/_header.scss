@@ -19,7 +19,7 @@
     position: relative;
     right: 20%;
     border: none;
-    background-color: $firm;
+    background-color: transparent;
     display: none;
     justify-content: center;
     align-items: center;
@@ -156,6 +156,25 @@
   .menu {
     &__list--active {
       top: 75px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    margin-right: 25px;
+  }
+
+  .phone {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .header {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }
